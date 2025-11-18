@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Author: Matthew Kolbe -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Pet Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carousel">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accordion">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carousel" class="carousel slide w-85 container" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/boarding.jpg" class="d-block w-100" alt="A pet boarding room for dogs.">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bath.webp" class="d-block w-100" alt="A dog getting a bath.">
+            </div>
+            <div class="carousel-item">
+                <img src="img/training.webp" class="d-block w-100" alt="A small dog being trained.">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container" id="services">
+        <div class="row">
+            <div class="card col" style="width: 18rem;">
+                <img src="img/boarding2.jpg" class="card-img-top" alt="Woman with several dogs.">
+                <div class="card-body">
+                    <h5 class="card-title">Boarding</h5>
+                    <p class="card-text">Around the clock employees will take care of your pets while you are away.</p>
+                </div>
+            </div>
+            <div class="card col" style="width: 18rem;">
+                <img src="img/grooming2.jpg" class="card-img-top" alt="a woman grooming a dog.">
+                <div class="card-body">
+                    <h5 class="card-title">Grooming</h5>
+                    <p class="card-text">Professional groomers clean up your pets from bathing to trimming fur to
+                        trimming claws.</p>
+                </div>
+            </div>
+            <div class="card col" style="width: 18rem;">
+                <img src="img/training2.webp" class="card-img-top" alt="a woman training a dog.">
+                <div class="card-body">
+                    <h5 class="card-title">Training</h5>
+                    <p class="card-text">Expert trainers ready to train your pet using a strict plan made with your
+                        input.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion bg-light text-dark" id="accordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Can I Tour the facility?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+                    <strong>Absolutely.</strong> We encourage you to come see us. Bring your pet with you so you both
+                    can get a good look around!
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What should I bring for overnight stays?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+                    <strong>The Essentials.</strong> Bring your pets favorite toy or pillow. Limit of two items.
+                    Medications needed and the scheduale.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Do you have around the clock veterinarian support?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+                    <strong>We certainly do!</strong> We have veterinarians employed with us to give us support 24/7.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
